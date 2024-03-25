@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 3fr 2fr 1fr;/auto
+            grid-template-rows: 3fr 2fr 1fr;
+            grid-template-rows: repeat(2,3fr);
+            
+            background-color: aquamarine;
+            padding: 50px;
+            gap: 20px 30px;
+        }
+        .gird-item{
+            background-color: antiquewhite;
+            border: 1px solid black;
+            padding: 25px;
+            text-align: center;
+        }
+        .item1{
+            background-color: red;
+            grid-column: 2/ span 3;
+            grid-row: 1/ span 2 ;
+        }
+        .item4{
+            background-color: pink;
+            color: black;
+            grid-column: 1;
+            grid-row: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="gird-item item1">
+            <h3>Header 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum, optio reprehenderit cumque similique facere aspernatur explicabo error nostrum odit, quod recusandae deleniti vel provident.</p>
+        </div>
+        <div class="gird-item item2">
+            <h3>Header 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum, optio reprehenderit cumque similique facere aspernatur explicabo error nostrum odit, quod recusandae deleniti vel provident.</p>
+        </div>
+        <div class="gird-item item3">
+            <h3>Header 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum, optio reprehenderit cumque similique facere aspernatur explicabo error nostrum odit, quod recusandae deleniti vel provident.</p>
+        </div>
+        <div class="gird-item item4">
+            <h3>Header 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum, optio reprehenderit cumque similique facere aspernatur explicabo error nostrum odit, quod recusandae deleniti vel provident.</p>
+        </div>
+        <div class="gird-item item5">
+            <h3>Header 5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum, optio reprehenderit cumque similique facere aspernatur explicabo error nostrum odit, quod recusandae deleniti vel provident.</p>
+        </div>
+    </div>
+</body>
+</html>
