@@ -186,7 +186,7 @@ body{
 
  .song{
     background-image: url(../images/music2.jpg);
-    background-size: cover; */
+    background-size: cover; 
      background-repeat: no-repeat;
     background-position: center;
     background-attachment: flex;
@@ -295,7 +295,7 @@ body{
     padding: 10px;
     font-size: 20px;
     width: 30%;
-    height: 50px;
+    
 }
 
 .form-group input, .form-group textarea{
@@ -307,6 +307,30 @@ body{
 
 
 }
+
+.footer{
+    
+        background-color: black;
+        padding: 50px 0;
+        color: white;
+        text-align: center;
+    }
+
+    .btn{
+        display: inline-block;
+    padding: 10px 20px;
+    background-color: #cda45e;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+
+    }
+    .btn:hover{
+        background-color: black;
+
+    }
+        
+
     
 
     
