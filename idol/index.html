@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post Malone</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="navbar">
@@ -36,7 +37,7 @@
 
     <header class="circle">
         <div class="maybe">
-            <div class="ice">
+            <div class="ice" data-aos="fade-up">
                 <h1>Post Malone</h1>
                 <p class="tag-line">SEASONS CHANGE AND OUR LOVE WENT COLD </p>
                 <img src="images/postmalone.jpg" alt="">
@@ -47,43 +48,133 @@
     </header>
 
     <div class="super" id="description">
-        <img src="images/postmalone2.webp" alt="" class="super-img">
-        <div class="man-text">
-            <a href="" class="btn">Description</a>
-            
+        <img src="images/postmalone2.webp" alt="" class="super-img"  data-aos="fade-right">
+        <div class="man-text" data-aos="fade-left">
             <h2>Early life and education</h2>
             <p>Austin Richard Post was born on July 4, 1995, in Syracuse, New York. He was raised by his father, Richard Post, and his stepmother, Jodie. His father had been a DJ in his youth and introduced Malone to many different genres of music including hip hop, country, and rock.</p>
         </div>
     </div>
-        <div class="jav"> 
-            <img src="images/postmalone3.jpg" alt="" class="jav-img">
-            <div class="jav-text">
+        
+    <div class="jav" > 
+        <img src="images/postmalone5.jpg" alt="" class="jav-img" data-aos="fade-right">
+            <div class="jav-text" data-aos="fade-left">
                  <h2>Carrier</h2>
                 <p>  Post Malone's musical career began like most artists: taking risks. The singer was sure that his future was in music, so when he left the institute decided to go to pursue his dream. He left Texas with his lifelong friend, Jason Stokes, and they moved to Los Angeles, California. Being in the city of stars, it was only a matter of time before his great opportunity arrived.
     
                     The first months in the city helped him to adapt to his new life. And that moment through a friend in common met the famous producer duo FKi, formed by 1st and Raye Rich. Soon they began to make music.
                     
                     The first successful collaboration between the artists was"White Iverson,"a subject that refers - in part - to professional basketball player Allen Iverson. As the artist later confessed, the song wrote it two days before recording it.</p>
-                    <div>
+                    
             </div>
-                 
+    </div>    
 
-        </div>
-        <div class="song">
-            <div class="song-text">
-                <h2>List of song</h2>
-                <ul>
-                    <li></li>
-                </ul>
+    <div class="song" id="songgraphy">
+            <img src="images/postmalone4.jpg" alt="" class="song-img" data-aos="fade-up-right">
+            <div class="song-text" data-aos="fade-up-left">
+                <h1>List Of Song</h1>
+                <div class="ptn">
+                    <ul>
+                        <li>2019</li>
+                        <li>Better Now</li>
+                        <li>Sunflower</li>
+                    </ul>
+                    <ul>
+                        <li>2020</li>
+                        <li>Circle</li>
+                        <li>Congratulation</li>
+                        
+                    </ul>
+                    <ul>
+                        <li>2021</li>
+                        <li>Rocter</li>
+                        <li>Wow</li>
+                    </ul>
+                </div>
+                
             </div>
 
-        </div>
+    </div>
 
-        
-
-        
-        
+    <h1 class="song-menu-title">Popular Songs</h1>
+        <div class="song-menu">
+            <div class="song-item" data-aos="flip-left" data-aos-delay="300">
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/wXhTHyIgQ_U?si=v4ElwQ4b4DHZ30Ep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="content" data-aos="zoom-in-down">
+                    <p class="title">Circle</p>
+                    <p class="price">Post Malone</p>
     
+                </div>
+    
+    
+            </div>
+    
+            <div class="song-item" data-aos="flip-left" data-aos-delay="500">
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/ApXoWvfEYVU?si=dleDW2qzSRJQSol7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+                <div class="content" data-aos="zoom-in-down">
+                    <p class="title">Sunflower</p>
+                    <p class="price">Post Malone</p>
+    
+                </div>
+            </div>
+    
+            <div class="song-item" data-aos="flip-left" data-aos-delay="700">
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/ba7mB8oueCY?si=Yf2EkUHKo4tXbXPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="content" data-aos="zoom-in-down">
+                    <p class="title">Goodbyes</p>
+                    <p class="price">Post Malone</p>
+    
+                </div>
+    
+            </div>
+    
+
+        </div>
+
+
+    <div class="cody" id="comment">
+            <div class="contact-form">
+                <form action="">
+                    <div class="form-group"  data-aos="zoom-in-right">
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" name="name" id="name">
+                    </div>
+    
+                    <div class="form-group"  data-aos="zoom-in-right">
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="text" name="email" id="email">
+                    </div>
+    
+                     <div class="form-group"  data-aos="zoom-in-right">
+                        <label for="message">Message</label>
+                        <br>
+                         <textarea name="message" id="message" cols="30" rows="10"></textarea> 
+                    </div> 
+                    
+                    
+
+                   
+                    
+                </form>
+                
+            </div>
+    
+    
+    </div>
+
+    
+       
+    <!-- <footer> 
+        <p align="center"> imucody.github.io &copy; All right reserved | By Cody </p>
+    </footer> -->
+    
+        
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+          AOS.init();
+    </script> 
     
 </body>
 </html>

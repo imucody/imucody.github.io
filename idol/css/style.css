@@ -172,7 +172,7 @@ body{
     text-align: center;
  }
 
- .btn{
+ /* .btn{
     display: inline-block;
     padding: 20px 30px;
     margin: 20px 30px 120px 60px;
@@ -182,7 +182,134 @@ body{
     border-radius: 5px;
     font-size: 30px;
     
- } 
+ }  */
+
+ .song{
+    background-image: url(../images/music2.jpg);
+    background-size: cover; */
+     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: flex;
+    background-color: rgba(0, 0, 0 , 0.6);
+    background-blend-mode: multiply;
+    
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+ }
+
+ .song-text{
+    padding: 0 200px;
+
+    color: white;
+
+ }
+
+.song-text h1{
+    font-size: 50px;
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+
+.ptn{
+    display: grid;
+    
+
+}
+
+.ptn ul{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+    justify-content: start;
+    padding: 20px;
+    
+
+}
+
+.ptn ul li{
+    display: inline;
+    list-style-type: none;
+    font-size: 30px;
+    color: aqua;
+}
+
+.song-img{
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.song-menu-title{
+    margin: 100px 0 50px 0;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.song-menu{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 20px;
+    margin: 0 70px;
+}
+
+.song-item{
+    background-color: #ffaf45;
+    border-radius: 10px;
+    
+}
+
+.song-item .content{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.song-item .title{
+    font-size: 30px;
+    color: black;
+    font-size: bold;
+    margin-bottom: 10px;
+}
+
+.song-item .price{
+    font-size: bold;
+    color: black;    
+}
+
+.cody{
+    display: block;
+    margin-left: 600px;
+    margin-top: 100px;
+    
+
+    
+}
+
+.form-group{
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    height: 50px;
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+
+
+}
+    
+
+    
 
  
     
