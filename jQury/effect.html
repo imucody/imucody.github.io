@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe debitis, eum dolorem assumenda quos libero asperiores voluptate sint laborum cumque nulla. At, nobis sint illo voluptate veritatis iste asperiores, rem quaerat accusantium alias vel ab aspernatur ipsam delectus odit adipisci nostrum. Consequatur placeat voluptatum quos maiores quaerat accusamus obcaecati voluptates asperiores illum, veritatis, modi nesciunt nihil exercitationem provident est beatae quia. Impedit perferendis labore, vero omnis deserunt eum id unde iste maiores eius doloribus sapiente dolores aliquid earum cumque enim atque consequuntur ducimus excepturi magni itaque explicabo autem. Rem molestias optio ratione, voluptatum esse accusamus veritatis accusantium consequatur ex odit fugit libero alias aliquid quae, harum laborum fuga tempore neque doloribus similique! Necessitatibus nulla vitae cupiditate libero eos cumque, dolores aut eveniet voluptatem delectus nostrum quae tempora harum totam est fugit quas perspiciatis minus natus vel. Officiis reprehenderit, ducimus beatae corporis dolore perferendis. Iusto vitae libero saepe totam iure dolor vel provident, eius ex quas quidem porro consequatur cumque earum eligendi, fugit magni, sapiente ipsum minima recusandae? Modi assumenda, esse impedit expedita minus consequuntur, laboriosam tenetur eos, ducimus repellendus voluptas temporibus mollitia provident rem magnam dicta unde debitis non nostrum. Sequi ad voluptatibus deleniti, deserunt a libero quo assumenda sint rerum dolorum, recusandae quasi magnam quidem soluta facilis ullam in esse corporis ab. Ex, quod officia? Deserunt iusto quod dolorem pariatur doloribus, eius in quaerat voluptate aut! Corporis doloribus eaque culpa rerum hic ex eius fugiat, perferendis quidem voluptates alias, mollitia magni impedit aut exercitationem doloremque atque cum labore. Aperiam, rem vel suscipit vitae rerum nihil vero obcaecati sequi libero quas quasi nisi harum similique magni ab delectus, facilis temporibus, aspernatur deserunt. Exercitationem, delectus velit consequatur possimus, laboriosam ad quia, vitae deserunt beatae necessitatibus amet totam. Placeat corrupti quasi harum voluptates ducimus enim dolorum. Vel perspiciatis minima beatae ab veritatis alias distinctio nesciunt modi odio quia iure illum, debitis officia eveniet quas tempora qui tempore dolorem maiores necessitatibus consequuntur adipisci tenetur accusamus! Suscipit a debitis eum ut perferendis eius tempora dignissimos odit, vitae porro. Fuga excepturi, consequatur earum dicta molestiae corrupti, dignissimos mollitia itaque eveniet illo laboriosam vel quidem nam a! Odio consequuntur sit, voluptas sint sunt veritatis quidem possimus, placeat ut inventore deleniti. Repudiandae animi atque porro tenetur sunt molestiae ad error, harum amet illo qui adipisci impedit magni cum consectetur voluptate repellat eos quo necessitatibus, unde dolore. Adipisci est labore iste corporis rem? Nesciunt quidem sit perferendis odio veritatis eos quo natus amet! Officiis fuga adipisci dolorem praesentium doloremque perspiciatis, reiciendis distinctio non voluptates quidem enim, molestias consequatur quam iure ratione suscipit! Voluptatibus debitis quia similique esse maxime laudantium eos error, nisi sed aliquid? Aliquid quas iste soluta! Velit facere voluptates sint quasi non neque, fugit explicabo beatae corporis ducimus harum aut dolorum, eveniet quo reprehenderit debitis suscipit id. Explicabo aut ea eveniet pariatur enim. Magni laboriosam eligendi harum commodi, doloribus reiciendis deserunt rerum laudantium dolor praesentium deleniti iusto, quidem obcaecati impedit dolorum neque vel ut sit saepe necessitatibus modi ipsam! Assumenda recusandae aperiam suscipit reiciendis odit!</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade-out">FadeOut</button>
+    <button id="fade-in">FadeIn</button>
+    <button id="fade-toggle">FadeToggle</button>
+    <button id="fade-to">FadeTo</button>
+    <button id="fade-to2">FadeTo2</button>
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('p').hide('fast',function(){
+                    alert("p tag is hide")
+                })
+            })
+
+            $('#show').click(function(){
+                $('p').show(1000);
+            })
+
+            $('#toggle').click(function(){
+                $('p').toggle(1000);
+            })
+
+            $('#fade-out').click(function(){
+                $('p').fadeOut(1000);
+            })
+
+            $('#fade-in').click(function(){
+                $('p').fadeIn(1000);
+            })
+
+            $('#fade-toggle').click(function(){
+                $('p').fadeToggle(1000);
+            })
+
+            $('#fade-to').click(function(){
+                $('p').fadeTo(1000,0.1)
+            })
+
+            $('#fade-to2').click(function(){
+                $('p').fadeTo(1000,1)
+            })
+
+        })
+    </script>
+</body>
+</html>

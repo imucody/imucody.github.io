@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="uLID">
+   <li id="one">Apple</li>
+    <li id="two">Orange</li>
+    <li id="three">Banana</li>
+</ul>
+
+    <script>
+        let uLID = document.querySelector('#uLID');
+        console.log(uLID);
+
+        let first_child = uLID.firstChild;
+        console.log(first_child);
+
+        let last_child = uLID.lastChild;
+        console.log(last_child);
+
+        let next_sibling = first_child.nextSibling;
+        console.log(next_sibling);
+
+        let previous_sibling = last_child.previousSibling;
+        console.log(previous_sibling);
+
+        let first_element_child = uLID.firstElementChild;
+        console.log(first_element_child);
+
+        let last_element_child = uLID.lastElementChild;
+        console.log(last_element_child);
+
+        let next_element_sibiling = first_element_child.nextElementSibling;
+        console.log(next_element_sibiling);
+
+        let previous_element_sibiling = next_element_sibiling.previousElementSibling;
+        console.log(previous_element_sibiling);
+
+
+    </script>
+</body>
+</html>

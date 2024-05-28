@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrary Lesson</h1>
+
+    <script>
+        //array
+        let arr = [1,2,3,4,];
+        console.log(arr);
+        document.write(`<h3> This is index value is ${arr[2]}</h3>`)
+        let arr1 = Array('a','b','c');
+        console.log(arr1);
+        document.write(`<h3> This is index value is ${arr1[2]}</h3>`)
+        let arr2 = [23,32,43,'Mg Mg','Aung Aung','Htwe Mya',['Yangon','Monywa',1989],true,false];
+        console.log(arr2);
+
+        let multi = [['Mg Mg','Aung Aung','Hla Hla'],[23,24,25],['Yangon','Monywa','Mandalay']];
+        console.log(multi);
+
+        let fruits = []
+        fruits[0] = 'Apple';
+        fruits[1] = 'Orange';
+        fruits[2] = 'Mango';
+        console.log(fruits);
+
+        fruits.push('Banana');//back
+        console.log(fruits);
+
+        fruits.unshift('Cherry')//infornt
+        console.log(fruits);
+
+        fruits.pop();// delete back
+        console.log(fruits);
+
+        fruits.shift();// delete infront
+        console.log(fruits);
+
+        console.log(fruits.sort());
+        console.log(fruits.reverse());
+
+        console.log(typeof(fruits));
+        let fruitString = fruits.toString();
+        console.log(fruitString);
+        console.log(typeof(fruitString));
+
+        fruits = fruitString.split(',');
+        console.log(fruits);
+
+        let str = "apple lenovo acer hp asus";
+        console.log(str);
+        let laptop = str.split(' ');
+        console.log(laptop);
+
+    </script>
+</body>
+</html>

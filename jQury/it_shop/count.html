@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <h2>IT Shop</h2>
+
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                    <a href="count.html" id="count_item">()</a>
+                </li>
+                
+                    
+                
+            </ul>
+
+        </div>
+
+    </nav>
+   
+    <table border="1" cellspacing="0" cellpadding="50">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Item Qty</th>
+                <th>SubTotal</th>
+
+            </tr>
+        </thead>
+        <tbody id="itemTbody">
+
+        </tbody>
+        
+    </table>
+    <button type="button" id="order_now">Order Now</button>
+    
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            getData();
+            
+        function getData(){
+                let shopString = localStorage.getItem('shop');
+                if(shopString){
+                    let shopArray = JSON.parse(shopString);
+                    let data = '';
+                    
+                    let total = 0;
+                    $.each(shopArray, function(i,v){
+                        let subtotal = v.price*v.qty;
+                        data += `<tr>
+                         
+                        <td>${v.id}</td>
+                         <td>${v.name}</td>
+                          <td>${v.price}</td>
+                         <td><button class="min" data-key="${i}"> - </button> ${v.qty} <button class="max" data-key="${i}"> + </button></td>
+                         <td>${subtotal}</td>
+                         
+                         </tr>`;
+                         total+=subtotal;
+                          
+                    })
+                    data+= `<tr>
+                        <td colspan='4' rowspan='1'>Total</td>
+                        <td>${total}</td>
+                        </tr>`
+                    console.log(shopString);
+                    $('#itemTbody').html(data);
+
+                }
+            }
+            $('#itemTbody').on('click','.min',function(){
+                // alert('hello');
+                let key = $(this).data('key');
+                console.log(key);
+
+                let shopString = localStorage.getItem('shop');
+                if(shopString){
+                    let shopArray =JSON.parse(shopString);
+
+                    $.each(shopArray,function(i,v){
+                        if(key == i){
+                            v.qty--;
+                            if(v.qty ==0){
+                                shopArray.splice(key,1);
+                            }
+                        }
+                    })
+                    let shopData = JSON.stringify(shopArray);
+                    localStorage.setItem('shop',shopData);
+                    getData();
+                }
+            })
+            $('#itemTbody').on('click','.max',function(){
+                // alert('hello');
+                let key = $(this).data('key');
+                console.log(key);
+
+                let shopString = localStorage.getItem('shop');
+                if(shopString){
+                    let shopArray =JSON.parse(shopString);
+
+                    $.each(shopArray,function(i,v){
+                        if(key == i){
+                            v.qty++;
+                            
+                        }
+                    })
+                    let shopData = JSON.stringify(shopArray);
+                    localStorage.setItem('shop',shopData);
+                    getData();
+                }
+            })
+            $('#order_now').click(function(){
+                let ans = confirm('Are you sure order?');
+                if(ans){
+                    localStorage.removeItem('shop');
+                    window.location.href = 'index.html'
+                }
+            })
+       } )
+    </script>
+        
+        
+          
+    
+    
+</body>
+</html>

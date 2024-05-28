@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        
+        <label for="name_id">Name</label>
+            <input type="text" name="name" id="name_id">
+            <br><br>
+            <label for="email_id">Email</label>
+            <input type="email" name="email" id="email_id">
+            <br><br>
+            <button onclick="show()">show</button>
+            <div id="tb"></div>
+
+
+
+            <script>
+              let Data =[]
+               function show(){
+                let name =document.getElementById('name_id').value;
+                console.log(name);
+                let email = document.getElementById('email_id').value;
+                console.log(email);
+
+                Data.push({name:name,email:email})
+                console.log(Data);
+                let myData = "<table border='1' cellspacing='0' cellpadding='15'>";
+                
+            
+            for (let value of Data){
+                myData += `<tr>
+                            
+                            <td>${value.name}</td>
+                            <td>${value.email}</td>
+                        </tr>`;
+            }
+            myData+='</table>'
+            console.log(myData);
+            document.querySelector('#tb').innerHTML = myData
+        }
+                  
+                
+               
+            </script>
+
+    
+
+           
+                   
+
+
+          
+            
+    
+</body>
+</html>
